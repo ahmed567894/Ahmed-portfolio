@@ -1,0 +1,304 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahmed's Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <header class="hero" id="home">
+      <div class="hero-text">
+        <h1>Hello, I'm <span>Ahmed</span></h1>
+        <p>
+          I'm a Creative Frontend Developer passionate about crafting clean,
+          responsive, and user-friendly interfaces. With a strong eye for design
+          and deep understanding of modern UI/UX principles, I specialize in
+          turning ideas into seamless digital experiences. I focus on building
+          accessible, high-performance, and pixel-perfect web applications using
+          the latest frontend technologies.
+        </p>
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
+      <img src="images/i.png" alt="Emily Parker class="image-hero" "/>
+    </header>
+
+    <section class="stats">
+      <div><span>5+</span>Years of Experience</div>
+      <div><span>90+</span>Projects Completed</div>
+      <div><span>105+</span>Happy Clients</div>
+      <div><span>15+</span>Honors and Awards</div>
+    </section>
+    <!-- about -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <div class="about-content">
+          <div class="about-left">
+            <p>
+              Hey, I’m <strong>Ahmed, a web developer</strong> from Bangladesh.
+              Currently in <strong>Dhaka</strong>.
+            </p>
+            <p>
+              I love to avoid buzz words. You’ll find no talk of ‘strategising,
+              team systems for agile workflow’. What does that even mean?
+            </p>
+            <p>You will only find hard work, passion and honesty here.</p>
+          </div>
+          <div class="about-right">
+            <p>
+              I’m actively involved in local and online
+              <strong>tech communities</strong>, where I organize meetups and
+              support others in learning to code.
+            </p>
+            <p>
+              I also create content for my <strong>YouTube channel</strong>,
+              where I share tutorials, tips, and experiences from my journey as
+              a developer.
+            </p>
+            <p>Check out my socials below to see what I’m working on.</p>
+          </div>
+        </div>
+        <div class="social-icons">
+          <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- skill -->
+    <section class="skills-section">
+      <h2 class="title">Skills</h2>
+      <div class="skills-container">
+        <div class="skills-left">
+          <h3>Profesional Skills</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
+            optio id vero amet, alias architecto consectetur error eum eaque
+            sit.
+          </p>
+          <div class="skill">
+            <div class="skill-icon">
+              <img
+                src="https://img.icons8.com/color/48/html-5.png"
+                alt="HTML5"
+              />
+            </div>
+            <span>HTML5</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 95%"></div>
+            </div>
+            <span class="percentage">95%</span>
+          </div>
+          <div class="skill">
+            <div class="skill-icon">
+              <img src="https://img.icons8.com/color/48/css3.png" alt="CSS3" />
+            </div>
+            <span>CSS3</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 85%"></div>
+            </div>
+            <span class="percentage">85%</span>
+          </div>
+          <div class="skill">
+            <div class="skill-icon">
+              <img
+                src="https://img.icons8.com/color/48/javascript--v1.png"
+                alt="JavaScript"
+              />
+            </div>
+            <span>JAVASCRIPT</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 65%"></div>
+            </div>
+            <span class="percentage">65%</span>
+          </div>
+          <div class="skill">
+            <div class="skill-icon">
+              <img
+                src="https://img.icons8.com/ios-filled/50/design.png"
+                alt="UX/UI"
+              />
+            </div>
+            <span>UX/UI</span>
+            <div class="progress-bar">
+              <div class="progress" style="width: 85%"></div>
+            </div>
+            <span class="percentage">85%</span>
+          </div>
+        </div>
+        <div class="skills-right">
+          <img src="images/image.png" class="skill-image" alt="Laptop Work" />
+        </div>
+      </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        <!-- Project 1: Speed Typing Game -->
+        <div class="project-card">
+          <img src="images/image copy.png" alt="Speed Typing Game" />
+          <h3>01 – Speed Typing Game</h3>
+          <p class="project-text">
+            A fast-paced typing challenge built with HTML, CSS, and JavaScript.
+            Players type randomly generated text accurately within a time limit.
+            Great for improving typing skills while demonstrating DOM
+            manipulation and JavaScript game logic.
+          </p>
+          <a href="#" class="project-link">View Project</a>
+        </div>
+
+        <!-- Project 2: Archery Game -->
+        <div class="project-card">
+          <img src="images/image copy 2.png" alt="Archery Game" />
+          <h3>02 – Archery Game</h3>
+          <p class="project-text">
+            An interactive archery game built with HTML, CSS, and JavaScript.
+            Players aim and shoot arrows at moving targets to earn points.
+            Features intuitive controls, canvas animation, and event handling.
+          </p>
+          <a href="#" class="project-link">View Project</a>
+        </div>
+
+        <!-- Project 3: Snake Game -->
+        <div class="project-card">
+          <img src="images/image copy 3.png" alt="Snake Game" />
+          <h3>14 – Snake Game</h3>
+          <p class="project-text">
+            A classic arcade-style snake game recreated for the web. Built with
+            HTML, CSS, and JavaScript, it challenges players to collect food and
+            avoid collisions. Includes keyboard controls and dynamic canvas
+            rendering.
+          </p>
+          <a href="#" class="project-link">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- my offerred services -->
+    <section id="services" class="services-section">
+      <h2>🚀 My Offered Services</h2>
+      <p class="description">
+        Explore a range of services tailored to deliver high-quality digital
+        experiences.
+      </p>
+      <div class="services">
+        <div class="service">
+          <img src="https://img.icons8.com/ios/50/combo-chart--v1.png" />
+          <h3>Web Design</h3>
+          <p>
+            “It is not because things are difficult that we do not dare; it is
+            because we do not dare that they are difficult.”
+          </p>
+        </div>
+        <div class="service">
+          <img src="https://img.icons8.com/ios/50/laptop-coding.png" />
+          <h3>Web Development</h3>
+          <p>
+            Entrepreneurship requires resilience, not just opinions. Focus
+            drives success beyond what others think.
+          </p>
+        </div>
+        <div class="service">
+          <img src="https://img.icons8.com/ios/50/camera--v1.png" />
+          <h3>Photography</h3>
+          <p>
+            Grow by embracing curiosity and learning—every effort you make
+            builds a better version of yourself.
+          </p>
+        </div>
+        <div class="service">
+          <img src="https://img.icons8.com/ios/50/scissors.png" />
+          <h3>Clipping Path</h3>
+          <p>
+            Advanced editing and precise object selection techniques that bring
+            clarity and creativity to your visuals.
+          </p>
+        </div>
+        <div class="service">
+          <img src="https://img.icons8.com/ios/50/smartphone-tablet.png" />
+          <h3>Apps Interface</h3>
+          <p>
+            User-friendly, intuitive mobile and web app interfaces that solve
+            problems and delight users.
+          </p>
+        </div>
+        <div class="service">
+          <img src="https://img.icons8.com/ios/50/rocket--v1.png" />
+          <h3>Graphic Design</h3>
+          <p>
+            Creativity meets strategy—captivating designs that communicate your
+            brand’s identity and message.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <h2>📞 Contact Me</h2>
+      <form id="contact-form">
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your Name"
+          required
+        />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your Email"
+          required
+        />
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div id="form-status"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p>&copy; 2024 Ahmed. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>
