@@ -541,3 +541,145 @@ footer {
 .social-links a:hover {
   color: var(--primary-color);
 }
+
+
+
+/* Switching mode */
+/* Dark Mode Toggle Button */
+.mode-toggle {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-left: auto;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.mode-toggle:hover {
+  background: #0891b2;
+}
+
+/* Dark Mode Styles */
+body,
+.stats div,
+.contact-section,
+.contact-section input,
+.contact-section textarea,
+.contact-section button {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+body.dark-mode {
+  background-color: #111827;
+  color: #e5e7eb;
+}
+
+body.dark-mode .navbar,
+body.dark-mode .stats div,
+body.dark-mode .about-section,
+body.dark-mode .skills-section,
+body.dark-mode .projects,
+body.dark-mode .services-section,
+body.dark-mode footer {
+  background-color: #1f2937;
+  color: #f3f4f6;
+}
+
+body.dark-mode .nav-links li a,
+body.dark-mode .social-icons a,
+body.dark-mode .social-icons a i,
+body.dark-mode .project-text,
+body.dark-mode .project-card h3 {
+  color: #e5e7eb;
+}
+
+body.dark-mode .project-card,
+body.dark-mode .skill,
+body.dark-mode .service {
+  background-color: #273549;
+}
+
+body.dark-mode .project-link {
+  background-color: #4f46e5;
+}
+
+body.dark-mode .project-link:hover {
+  background-color: #3730a3;
+}
+body.dark-mode .contact-section {
+  background-color: #1f2937;
+  color: #f3f4f6;
+}
+
+body.dark-mode .contact-section input,
+body.dark-mode .contact-section textarea {
+  background-color: #111827;
+  color: #f3f4f6;
+  border: 1px solid #374151;
+}
+
+body.dark-mode .contact-section button {
+  background-color: #06b6d4;
+  color: #fff;
+}
+
+body.dark-mode .contact-section button:hover {
+  background-color: #0891b2;
+}
+body.dark-mode .stats {
+  background-color: #111827;
+  color: #f3f4f6;
+}
+
+body.dark-mode .stats div {
+  background-color: #1f2937;
+  color: #e5e7eb;
+  box-shadow: 0 6px 18px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .stats span {
+  color: #a855f7; /* Soft purple for numbers */
+}
+/* Fix About Section Text in Dark Mode */
+body.dark-mode .about-left p,
+body.dark-mode .about-right p,
+body.dark-mode .about-section {
+  color: #e5e7eb;
+}
+
+/* Fix Skill Section Text in Dark Mode */
+body.dark-mode .skills-left p,
+body.dark-mode .skill span,
+body.dark-mode .skills-section,
+body.dark-mode .skill .percentage {
+  color: #f3f4f6;
+}
+
+body.dark-mode .progress-bar {
+  background: #374151; /* darker background for progress bar base */
+}
+
+body.dark-mode .progress {
+  background: #3b82f6; /* bright blue for progress fill */
+}
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode .section-title {
+  color: #ffffff;
+}
+/* Fix Service Section Text in Dark Mode */
+body.dark-mode .services,
+body.dark-mode .service {
+  background-color: #273549;
+  color: #f3f4f6;
+}
+
+body.dark-mode .service p {
+  color: #d1d5db; /* Light gray for readability */
+}
+
+body.dark-mode .service h3 {
+  color: #ffffff;
+}
