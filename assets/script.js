@@ -1,12 +1,12 @@
 // script.js
 
-// Dark Mode Toggle
 const toggleBtn = document.getElementById("darkModeToggle");
+
 toggleBtn.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
   toggleBtn.textContent = document.body.classList.contains("dark-mode")
-    ? "☀️ Toggle Light Mode"
-    : "🌙 Switch Mode";
+    ? "☀️ "
+    : "🌙 ";
 });
 
 // Contact Form Handling
