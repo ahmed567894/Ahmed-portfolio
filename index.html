@@ -1,300 +1,251 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ahmed's Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="assets/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Poppins:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="logo">Portfolio</div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <button id="darkModeToggle" class="mode-toggle">🌙</button>
-      </ul>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahmed's Portfolio</title>
 
-    <header class="hero" id="home">
-      <div class="hero-text">
-        <h1>Hello, I'm <span>Ahmed</span></h1>
-        <p>
-I’m a passionate Computer Science Engineer and Developer with a strong interest in Artificial Intelligence, Machine Learning, and modern web technologies. I enjoy building innovative, user-friendly, and high-performance digital solutions that solve real-world problems. With experience in software development, frontend design, and AI-driven applications, I focus on creating clean, responsive, and efficient systems. I’m dedicated to continuous learning, exploring emerging technologies, and transforming ideas into impactful digital experiences
-        </p>
-        <a href="#projects" class="btn">View My Work</a>
-      </div>
-      <img src="images/0AE33705-04B4-45E9-A67A-5E8209397638-removebg-preview.png"/>
-    </header>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/style.css" />
 
-    <section class="stats">
-      <div><span>5+</span>Years of Experience</div>
-      <div><span>90+</span>Projects Completed</div>
-      <div><span>105+</span>Happy Clients</div>
-      <div><span>15+</span>Honors and Awards</div>
-    </section>
-    <!-- about -->
-    <section class="about-section" id="about">
-      <div class="container">
-        <h2 class="section-title">About</h2>
-        <div class="about-content">
-          <div class="about-left">
-            <p>
-              Hey, I’m <strong>Ahmed, a Machine learning </strong> from Somalia
-              Currently in <strong>Mogadishu</strong>.
-            </p>
-            <p>
-              I love to avoid buzz words. You’ll find no talk of ‘strategising,
-              team systems for agile workflow’. What does that even mean?
-            </p>
-            <p>You will only find hard work, passion and honesty here.</p>
-          </div>
-          <div class="about-right">
-            <p>
-              I’m actively involved in local and online
-              <strong>tech communities</strong>, where I organize meetups and
-              support others in learning to code.
-            </p>
-            <p>
-              I also create content for my <strong>YouTube channel</strong>,
-              where I share tutorials, tips, and experiences from my journey as
-              a developer.
-            </p>
-            <p>Check out my socials below to see what I’m working on.</p>
-          </div>
-        </div>
-        <div class="social-icons">
-          <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
-          <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
-          <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-        </div>
-      </div>
-    </section>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
 
-    <!-- skill -->
-    <section class="skills-section">
-      <h2 class="title">Skills</h2>
-      <div class="skills-container">
-        <div class="skills-left">
-          <h3>Profesional Skills</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
-            optio id vero amet, alias architecto consectetur error eum eaque
-            sit.
-          </p>
-          <div class="skill">
-            <div class="skill-icon">
-              <img
-                src="https://img.icons8.com/color/48/html-5.png"
-                alt="HTML5"
-              />
-            </div>
-            <span>HTML5</span>
-            <div class="progress-bar">
-              <div class="progress" style="width: 95%"></div>
-            </div>
-            <span class="percentage">95%</span>
-          </div>
-          <div class="skill">
-            <div class="skill-icon">
-              <img src="https://img.icons8.com/color/48/css3.png" alt="CSS3" />
-            </div>
-            <span>CSS3</span>
-            <div class="progress-bar">
-              <div class="progress" style="width: 85%"></div>
-            </div>
-            <span class="percentage">85%</span>
-          </div>
-          <div class="skill">
-            <div class="skill-icon">
-              <img
-                src="https://img.icons8.com/color/48/javascript--v1.png"
-                alt="JavaScript"
-              />
-            </div>
-            <span>JAVASCRIPT</span>
-            <div class="progress-bar">
-              <div class="progress" style="width: 65%"></div>
-            </div>
-            <span class="percentage">65%</span>
-          </div>
-          <div class="skill">
-            <div class="skill-icon">
-              <img
-                src="https://img.icons8.com/ios-filled/50/design.png"
-                alt="UX/UI"
-              />
-            </div>
-            <span>UX/UI</span>
-            <div class="progress-bar">
-              <div class="progress" style="width: 85%"></div>
-            </div>
-            <span class="percentage">85%</span>
-          </div>
-        </div>
-        <div class="skills-right">
-          <img src="images/image.png" class="skill-image" alt="Laptop Work" />
-        </div>
-      </div>
-    </section>
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-      <h2>My Projects</h2>
-      <div class="projects-grid">
-        <!-- Project 1: Speed Typing Game -->
-        <div class="project-card">
-          <img src="images/image copy.png" alt="Speed Typing Game" />
-          <h3>01 – Speed Typing Game</h3>
-          <p class="project-text">
-            A fast-paced typing challenge built with HTML, CSS, and JavaScript.
-            Players type randomly generated text accurately within a time limit.
-            Great for improving typing skills while demonstrating DOM
-            manipulation and JavaScript game logic.
-          </p>
-          <a href="#" class="project-link">View Project</a>
-        </div>
+<body>
+  <nav class="navbar">
+    <div class="logo">Portfolio</div>
 
-        <!-- Project 2: Archery Game -->
-        <div class="project-card">
-          <img src="images/image copy 2.png" alt="Archery Game" />
-          <h3>02 – Archery Game</h3>
-          <p class="project-text">
-            An interactive archery game built with HTML, CSS, and JavaScript.
-            Players aim and shoot arrows at moving targets to earn points.
-            Features intuitive controls, canvas animation, and event handling.
-          </p>
-          <a href="#" class="project-link">View Project</a>
-        </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><button id="darkModeToggle" class="mode-toggle">🌙</button></li>
+    </ul>
+  </nav>
 
-        <!-- Project 3: Snake Game -->
-        <div class="project-card">
-          <img src="images/image copy 3.png" alt="Snake Game" />
-          <h3>14 – Snake Game</h3>
-          <p class="project-text">
-            A classic arcade-style snake game recreated for the web. Built with
-            HTML, CSS, and JavaScript, it challenges players to collect food and
-            avoid collisions. Includes keyboard controls and dynamic canvas
-            rendering.
-          </p>
-          <a href="#" class="project-link">View Project</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- my offerred services -->
-    <section id="services" class="services-section">
-      <h2>🚀 My Offered Services</h2>
-      <p class="description">
-        Explore a range of services tailored to deliver high-quality digital
-        experiences.
+  <header class="hero" id="home">
+    <div class="hero-text">
+      <h1>Hello, I'm <span>Ahmed</span></h1>
+      <p>
+        I’m a passionate Computer Science Engineer and Developer with a strong
+        interest in Artificial Intelligence, Machine Learning, and modern web
+        technologies. I enjoy building innovative, user-friendly, and
+        high-performance digital solutions that solve real-world problems.
       </p>
-      <div class="services">
-        <div class="service">
-          <img src="https://img.icons8.com/ios/50/combo-chart--v1.png" />
-          <h3>Web Design</h3>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+
+    <img src="images/0AE33705-04B4-45E9-A67A-5E8209397638-removebg-preview.png" alt="Ahmed profile image">
+  </header>
+
+  <section class="stats">
+    <div><span>1+</span>Years of Experience</div>
+    <div><span>10+</span>Projects Completed</div>
+    <div><span>5+</span>Happy Clients</div>
+    <div><span>3+</span>Honors and Awards</div>
+  </section>
+
+  <section class="about-section" id="about">
+    <div class="container">
+      <h2 class="section-title">About</h2>
+
+      <div class="about-content">
+        <div class="about-left">
           <p>
-            “It is not because things are difficult that we do not dare; it is
-            because we do not dare that they are difficult.”
+            Hey, I’m <strong>Ahmed, a Machine Learning Engineer and Frontend Developer</strong>
+            from Somalia, currently based in <strong>Mogadishu</strong>.
           </p>
+          <p>
+            I enjoy building clean, responsive, and user-friendly digital
+            solutions using modern web technologies and AI.
+          </p>
+          <p>You will only find hard work, passion, and honesty here.</p>
         </div>
-        <div class="service">
-          <img src="https://img.icons8.com/ios/50/laptop-coding.png" />
-          <h3>Web Development</h3>
+
+        <div class="about-right">
           <p>
-            Entrepreneurship requires resilience, not just opinions. Focus
-            drives success beyond what others think.
+            I’m interested in <strong>Artificial Intelligence</strong>,
+            <strong>Machine Learning</strong>, frontend design, and real-world
+            software projects.
           </p>
-        </div>
-        <div class="service">
-          <img src="https://img.icons8.com/ios/50/camera--v1.png" />
-          <h3>Photography</h3>
           <p>
-            Grow by embracing curiosity and learning—every effort you make
-            builds a better version of yourself.
+            I focus on continuous learning, practical development, and
+            transforming ideas into impactful digital experiences.
           </p>
-        </div>
-        <div class="service">
-          <img src="https://img.icons8.com/ios/50/scissors.png" />
-          <h3>Clipping Path</h3>
-          <p>
-            Advanced editing and precise object selection techniques that bring
-            clarity and creativity to your visuals.
-          </p>
-        </div>
-        <div class="service">
-          <img src="https://img.icons8.com/ios/50/smartphone-tablet.png" />
-          <h3>Apps Interface</h3>
-          <p>
-            User-friendly, intuitive mobile and web app interfaces that solve
-            problems and delight users.
-          </p>
-        </div>
-        <div class="service">
-          <img src="https://img.icons8.com/ios/50/rocket--v1.png" />
-          <h3>Graphic Design</h3>
-          <p>
-            Creativity meets strategy—captivating designs that communicate your
-            brand’s identity and message.
-          </p>
+          <p>Check out my socials below to see what I’m working on.</p>
         </div>
       </div>
-    </section>
 
-    <section id="contact" class="contact-section">
-      <h2>📞 Contact Me</h2>
-      <form id="contact-form">
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Your Name"
-          required
-        />
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Your Email"
-          required
-        />
-        <textarea
-          id="message"
-          name="message"
-          placeholder="Your Message"
-          required
-        ></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-      <div id="form-status"></div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <div class="social-links">
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
+      <div class="social-icons">
+        <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
       </div>
-      <p>&copy; 2024 Ahmed. All rights reserved.</p>
-    </footer>
+    </div>
+  </section>
 
-    <script src="assets/script.js"></script>
-  </body>
+  <section class="skills-section" id="skills">
+    <h2 class="title">Skills</h2>
+
+    <div class="skills-container">
+      <div class="skills-left">
+        <h3>Professional Skills</h3>
+        <p>
+          I have practical experience in frontend development, responsive
+          design, JavaScript, UI/UX, and AI-based academic projects.
+        </p>
+
+        <div class="skill">
+          <div class="skill-icon">
+            <img src="https://img.icons8.com/color/48/html-5.png" alt="HTML5">
+          </div>
+          <span>HTML5</span>
+          <div class="progress-bar"><div class="progress" style="width: 95%"></div></div>
+          <span class="percentage">95%</span>
+        </div>
+
+        <div class="skill">
+          <div class="skill-icon">
+            <img src="https://img.icons8.com/color/48/css3.png" alt="CSS3">
+          </div>
+          <span>CSS3</span>
+          <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+          <span class="percentage">85%</span>
+        </div>
+
+        <div class="skill">
+          <div class="skill-icon">
+            <img src="https://img.icons8.com/color/48/javascript--v1.png" alt="JavaScript">
+          </div>
+          <span>JavaScript</span>
+          <div class="progress-bar"><div class="progress" style="width: 65%"></div></div>
+          <span class="percentage">65%</span>
+        </div>
+
+        <div class="skill">
+          <div class="skill-icon">
+            <img src="https://img.icons8.com/ios-filled/50/design.png" alt="UI UX">
+          </div>
+          <span>UI/UX</span>
+          <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+          <span class="percentage">85%</span>
+        </div>
+      </div>
+
+      <div class="skills-right">
+        <img src="images/image.png" class="skill-image" alt="Laptop work">
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="images/image copy.png" alt="Speed Typing Game">
+        <h3>01 – Speed Typing Game</h3>
+        <p class="project-text">
+          A fast-paced typing challenge built with HTML, CSS, and JavaScript.
+          Players type randomly generated text accurately within a time limit.
+        </p>
+        <a href="#" class="project-link">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <img src="images/image copy 2.png" alt="Archery Game">
+        <h3>02 – Archery Game</h3>
+        <p class="project-text">
+          An interactive archery game built with HTML, CSS, and JavaScript.
+          Players aim and shoot arrows at moving targets to earn points.
+        </p>
+        <a href="#" class="project-link">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <img src="images/image copy 3.png" alt="Snake Game">
+        <h3>03 – Snake Game</h3>
+        <p class="project-text">
+          A classic snake game built with HTML, CSS, and JavaScript. It includes
+          keyboard controls, scoring, and dynamic canvas rendering.
+        </p>
+        <a href="#" class="project-link">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services-section">
+    <h2>🚀 My Offered Services</h2>
+    <p class="description">
+      Explore a range of services tailored to deliver high-quality digital experiences.
+    </p>
+
+    <div class="services">
+      <div class="service">
+        <img src="https://img.icons8.com/ios/50/combo-chart--v1.png" alt="Web Design">
+        <h3>Web Design</h3>
+        <p>Modern, clean, and responsive website designs for personal and business needs.</p>
+      </div>
+
+      <div class="service">
+        <img src="https://img.icons8.com/ios/50/laptop-coding.png" alt="Web Development">
+        <h3>Web Development</h3>
+        <p>Frontend development using HTML, CSS, JavaScript, and modern UI practices.</p>
+      </div>
+
+      <div class="service">
+        <img src="https://img.icons8.com/ios/50/camera--v1.png" alt="Photography">
+        <h3>Photography</h3>
+        <p>Creative visual content for social media, branding, and digital presentation.</p>
+      </div>
+
+      <div class="service">
+        <img src="https://img.icons8.com/ios/50/scissors.png" alt="Clipping Path">
+        <h3>Clipping Path</h3>
+        <p>Precise image editing, object selection, background removal, and cleanup.</p>
+      </div>
+
+      <div class="service">
+        <img src="https://img.icons8.com/ios/50/smartphone-tablet.png" alt="Apps Interface">
+        <h3>Apps Interface</h3>
+        <p>User-friendly mobile and web app interfaces focused on clear user experience.</p>
+      </div>
+
+      <div class="service">
+        <img src="https://img.icons8.com/ios/50/rocket--v1.png" alt="Graphic Design">
+        <h3>Graphic Design</h3>
+        <p>Creative designs that communicate your brand’s identity and message clearly.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2>📞 Contact Me</h2>
+
+    <form id="contact-form">
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+      <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div id="form-status"></div>
+  </section>
+
+  <footer>
+    <div class="social-links">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    <p>&copy; 2026 Ahmed. All rights reserved.</p>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
 </html>
