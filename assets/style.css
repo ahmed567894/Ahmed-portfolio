@@ -1,4 +1,3 @@
-/* style.css */
 * {
   margin: 0;
   padding: 0;
@@ -15,9 +14,10 @@
 }
 
 body {
-  background: #fff
+  background: #fff;
   color: var(--primary);
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -42,6 +42,7 @@ body {
   list-style: none;
   display: flex;
   gap: 2rem;
+  align-items: center;
 }
 
 .nav-links li a {
@@ -55,23 +56,26 @@ body {
   color: var(--accent);
 }
 
-/* Fix hero gradient */
 .hero {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
+  gap: 40px;
   padding: 6rem 4rem;
   background: linear-gradient(135deg, #1e3a8a, #0f172a);
   color: var(--text-light);
   min-height: 100vh;
-  width:100%
+  width: 100%;
 }
-.image-hero{
-  width:100%
+
+.hero-text {
+  flex: 1;
+  max-width: 600px;
 }
+
 .hero-text h1 {
   font-size: 4rem;
-  line-height: 1.4;
+  line-height: 1.2;
 }
 
 .hero-text span {
@@ -79,9 +83,18 @@ body {
 }
 
 .hero-text p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-top: 1rem;
   line-height: 1.8;
+}
+
+.hero img {
+  flex: 1;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  display: block;
+  object-fit: contain;
 }
 
 .btn {
@@ -100,34 +113,7 @@ body {
 .btn:hover {
   background: #0891b2;
 }
-/* About Section Styles */
-.about-section {
-  margin-top: 10rem;
-  background-color: #b7b7b700;
-  padding: 4rem 6rem;
-  text-align: center;
-}
-.about-section .container {
-  margin-top: 4rem;
-}
-.section-title {
-  font-size: 2rem;
-  font-weight: bold;
-  position: relative;
-  display: inline-block;
-  margin-bottom: 2rem;
-}
 
-.section-title::after {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 4px;
-  background-color: #facc15; /* yellow underline */
-  margin: 0.5rem auto 0;
-}
-
-/* stats */
 .stats {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -159,15 +145,48 @@ body {
   margin-bottom: 0.5rem;
 }
 
-/* About */
+.about-section,
+.projects-section,
+.skills-section,
+.contact-section,
+.services-section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.about-section {
+  background-color: transparent;
+}
+
+.about-section .container {
+  margin-top: 4rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #facc15;
+  margin: 0.5rem auto 0;
+}
+
 .about-content {
   display: flex;
-  flex-direction: column;
   gap: 2rem;
   max-width: 900px;
   margin: 0 auto;
   text-align: left;
-  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -186,7 +205,6 @@ body {
 
 .social-icons {
   margin-top: 2rem;
-  text-decoration: none;
 }
 
 .social-icons a {
@@ -195,10 +213,7 @@ body {
   margin: 0 10px;
   transition: color 0.3s;
   display: inline-block;
-}
-
-.social-icons a:hover {
-  color: #facc15;
+  text-decoration: none;
 }
 
 .social-icons a i {
@@ -218,53 +233,10 @@ body {
   color: white;
 }
 
-
-.about-section,
-.projects-section,
-.skills-section,
-.contact-section,
-.services-section {
-  padding: 4rem 2rem;
-  max-width: 1000px;
-  margin: auto;
-  text-align: center;
-}
-
-
-/* skills */
-
-
 .skills-section {
   padding: 50px;
   max-width: 1200px;
   margin: auto;
-}
-.skill-image{
-  width:100%;
-  height:37rem
-
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-.skill {
-  background: #fff;
-  border: 1px solid #e2e8f0;
-  border-radius: 12px;
-  padding: 1rem;
-  font-weight: 600;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
-  transition: transform 0.3s ease;
-}
-
-.skill:hover {
-  transform: scale(1.05);
-  background-color: #e0f7fa;
 }
 
 .title {
@@ -292,11 +264,11 @@ body {
   align-items: flex-start;
 }
 
-.skills-left {
+.skills-left,
+.skills-right {
   flex: 1;
   min-width: 300px;
 }
-
 
 .skills-left p {
   color: #555;
@@ -305,7 +277,21 @@ body {
   max-width: 500px;
 }
 
+.skill {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1rem;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s ease;
+  margin-bottom: 1rem;
+}
 
+.skill:hover {
+  transform: scale(1.05);
+  background-color: #e0f7fa;
+}
 
 .skill-icon {
   display: inline-block;
@@ -328,47 +314,38 @@ body {
 }
 
 .progress {
-  height: 26px;
+  height: 100%;
   background: #4169e1;
   border-radius: 5px;
-  width: 10;
   transition: width 1.5s ease-in-out;
 }
 
 .percentage {
   float: right;
-
   font-weight: bold;
 }
 
-.skills-right {
-  flex: 1;
-  min-width: 300px;
-}
-
+.skill-image,
 .skills-right img {
   width: 100%;
+  height: auto;
   border-radius: 12px;
   object-fit: cover;
 }
 
-/* Projects Section */
-/* Projects Section Container */
 .projects {
   padding: 5rem 5%;
   background-color: #f9f9f9;
 }
 
-/* Section Title */
 .projects h2 {
   text-align: center;
   margin-bottom: 3rem;
   font-size: 2.75rem;
-  color: #1f2937; /* Gray-800 */
+  color: #1f2937;
   font-weight: 700;
 }
 
-/* Grid Layout */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -377,7 +354,6 @@ body {
   margin: 0 auto;
 }
 
-/* Card Styling */
 .project-card {
   background: #ffffff;
   border-radius: 12px;
@@ -386,64 +362,49 @@ body {
   flex-direction: column;
   justify-content: space-between;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .project-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
 
-/* Project Image */
 .project-card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
 
-/* Project Title */
 .project-card h3 {
-  padding: 2rem 2rem;
+  padding: 2rem;
   font-size: 1.25rem;
   font-weight: 600;
-  color: #111827; /* Gray-900 */
-  margin: 0;
+  color: #111827;
 }
 
-/* Project Description */
 .project-text {
   padding: 0 1rem;
   font-size: 1rem;
-  color: #4b5563; /* Gray-600 */
-  font-weight: 400;
+  color: #4b5563;
   line-height: 1.6;
   text-align: justify;
-  letter-spacing: 0.3px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* View Project Button */
 .project-link {
   display: block;
   width: fit-content;
   margin: 1.5rem auto 1rem;
   padding: 0.6rem 1.4rem;
-  background-color: #2563eb; /* Blue-600 */
+  background-color: #2563eb;
   color: #ffffff;
   font-size: 0.95rem;
-  font-weight: 500;
-  border: none;
   border-radius: 8px;
   text-align: center;
   text-decoration: none;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .project-link:hover {
-  background-color: #1e40af; /* Blue-800 */
-  transform: scale(1.05);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  background-color: #1e40af;
 }
 
 .services {
@@ -451,7 +412,6 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
-  text-align: center;
 }
 
 .service {
@@ -474,7 +434,6 @@ body {
 
 .service h3 {
   font-size: 18px;
-  font-weight: 600;
   margin-bottom: 10px;
 }
 
@@ -513,13 +472,8 @@ body {
   padding: 0.75rem 1.5rem;
   cursor: pointer;
   font-weight: 600;
-  transition: background-color 0.3s ease;
 }
 
-.contact-section button:hover {
-  background-color: #0891b2;
-}
-/* Footer */
 footer {
   background: #111827;
   color: #9ca3af;
@@ -535,17 +489,8 @@ footer {
   color: white;
   font-size: 1.5rem;
   margin: 0 1rem;
-  transition: color 0.3s ease;
 }
 
-.social-links a:hover {
-  color: var(--primary-color);
-}
-
-
-
-/* Switching mode */
-/* Dark Mode Toggle Button */
 .mode-toggle {
   background: var(--accent);
   color: #fff;
@@ -554,21 +499,6 @@ footer {
   margin-left: auto;
   border-radius: 30px;
   cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.mode-toggle:hover {
-  background: #0891b2;
-}
-
-/* Dark Mode Styles */
-body,
-.stats div,
-.contact-section,
-.contact-section input,
-.contact-section textarea,
-.contact-section button {
-  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 body.dark-mode {
@@ -601,85 +531,65 @@ body.dark-mode .service {
   background-color: #273549;
 }
 
-body.dark-mode .project-link {
-  background-color: #4f46e5;
-}
-
-body.dark-mode .project-link:hover {
-  background-color: #3730a3;
-}
-body.dark-mode .contact-section {
-  background-color: #1f2937;
-  color: #f3f4f6;
-}
-
-body.dark-mode .contact-section input,
-body.dark-mode .contact-section textarea {
-  background-color: #111827;
-  color: #f3f4f6;
-  border: 1px solid #374151;
-}
-
-body.dark-mode .contact-section button {
-  background-color: #06b6d4;
-  color: #fff;
-}
-
-body.dark-mode .contact-section button:hover {
-  background-color: #0891b2;
-}
-body.dark-mode .stats {
-  background-color: #111827;
-  color: #f3f4f6;
-}
-
-body.dark-mode .stats div {
-  background-color: #1f2937;
-  color: #e5e7eb;
-  box-shadow: 0 6px 18px rgba(255, 255, 255, 0.05);
-}
-
-body.dark-mode .stats span {
-  color: #a855f7; /* Soft purple for numbers */
-}
-/* Fix About Section Text in Dark Mode */
 body.dark-mode .about-left p,
 body.dark-mode .about-right p,
-body.dark-mode .about-section {
-  color: #e5e7eb;
-}
-
-/* Fix Skill Section Text in Dark Mode */
 body.dark-mode .skills-left p,
-body.dark-mode .skill span,
-body.dark-mode .skills-section,
-body.dark-mode .skill .percentage {
-  color: #f3f4f6;
+body.dark-mode .service p {
+  color: #d1d5db;
 }
 
-body.dark-mode .progress-bar {
-  background: #374151; /* darker background for progress bar base */
-}
-
-body.dark-mode .progress {
-  background: #3b82f6; /* bright blue for progress fill */
-}
 body.dark-mode h2,
 body.dark-mode h3,
 body.dark-mode .section-title {
   color: #ffffff;
 }
-/* Fix Service Section Text in Dark Mode */
-body.dark-mode .services,
-body.dark-mode .service {
-  background-color: #273549;
-  color: #f3f4f6;
-}
 
-body.dark-mode .service p {
-  color: #d1d5db; /* Light gray for readability */
-}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 15px;
+  }
 
-body.dark-mode .service h3 {
-  color: #ffffff;
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 80px 20px 40px;
+    gap: 25px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .hero img {
+    max-width: 280px;
+  }
+
+  .about-content,
+  .skills-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .projects-grid,
+  .services,
+  .stats {
+    grid-template-columns: 1fr;
+  }
 }
